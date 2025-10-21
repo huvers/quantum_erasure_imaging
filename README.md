@@ -7,6 +7,10 @@ causal-order (ICO) visualizations discussed throughout the paper, so
 readers can reproduce the figures, probe assumptions, or adapt the
 pipeline to their own samples.
 
+| Quantum-eraser imaging interferometer (Fig. 1 in the paper) |
+| :--: |
+| ![Interferometer schematic](intro_fig.png) |
+
 ## Repository Overview
 - `quantum_eraser_imaging.pdf` – preprint for reference.
 - `qei_monte_carlo_gpu.py` – end-to-end simulator used in the main text:
