@@ -57,14 +57,14 @@ pip install cupy-cuda12x  # pick the wheel that matches your CUDA stack
 ## Featured Outputs
 The repository ships with pre-generated figures built from the paper’s
 smooth phase profile and the public-domain `butterfly.jpg` amplitude:
-- `butterfly_qei_main.png` – dual-modality QEI reconstruction and
-  diagnostics.
-- `butterfly_qei_ico_main.png` – same sample with the ICO module enabled,
-  showing both standard reconstructions and switch summary panels.
-- `butterfly_qei_ico_ico.png` – commutator contrast, direct I± ratio, and
-  causal witness maps from that ICO run.
-- `butterfly_ico_curves.png` – ICO tuning curves (anisotropy, Δ, β)
-  evaluated on the butterfly sample.
+
+| QEI dual-modality figure (`butterfly_qei_main.png`) | ICO diagnostics (`butterfly_qei_ico_ico.png`) |
+| :--: | :--: |
+| ![QEI main figure](butterfly_qei_main.png) | ![ICO commutator/witness figure](butterfly_qei_ico_ico.png) |
+
+| ICO tuning curves (`butterfly_ico_curves.png`) |
+| :--: |
+| ![ICO tuning curves](butterfly_ico_curves.png) |
 
 Recreate or adapt them with:
 
