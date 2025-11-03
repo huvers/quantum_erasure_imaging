@@ -1,10 +1,10 @@
-# Quantum Erasure Imaging – Code Companion
+# Quantum Erasure Imaging Simulation Codebase
 
-This repository accompanies the preprint **“Quantum Erasure Imaging:
+This repository was originally developed for experimentation, and became the basis for the preprint **“Quantum Erasure Imaging:
 Complementary Modalities and Indefinite Causal Order”**. The scripts
-implement the Monte-Carlo studies, estimator checks, and indefinite
+implement the Monte-Carlo sims, estimator checks, and indefinite
 causal-order (ICO) visualizations discussed throughout the paper, so
-readers can reproduce the figures, investigate assumptions, or adapt the
+readers can reproduce figures, investigate assumptions, or adapt the
 pipeline to their own experiments.
 
 **At a glance**
