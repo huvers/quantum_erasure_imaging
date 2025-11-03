@@ -4,8 +4,8 @@ This repository accompanies the preprint **“Quantum Erasure Imaging:
 Complementary Modalities and Indefinite Causal Order”**. The scripts
 implement the Monte-Carlo studies, estimator checks, and indefinite
 causal-order (ICO) visualizations discussed throughout the paper, so
-readers can reproduce the figures, probe assumptions, or adapt the
-pipeline to their own samples.
+readers can reproduce the figures, investigate assumptions, or adapt the
+pipeline to their own experiments.
 
 **At a glance**
 - Dual-modality QEI simulator (`qei_monte_carlo_gpu.py`) that recreates the absorption/phase reconstructions and Fisher-information analyses from Secs. II–IV.
