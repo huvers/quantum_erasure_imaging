@@ -1,7 +1,7 @@
 # Quantum Erasure Imaging Simulation Codebase
 
 This repository was originally developed for experimentation, and became the basis for the preprint **“Quantum Erasure Imaging:
-Complementary Modalities and Indefinite Causal Order”**. The scripts
+Complementary Modalities and Indefinite Causal Order”** by myself (Sean Huver) and Sanjaya Lohani. The scripts
 implement the Monte-Carlo sims, estimator checks, and indefinite
 causal-order (ICO) visualizations discussed throughout the paper, so
 readers can reproduce figures, investigate assumptions, or adapt the
@@ -122,7 +122,7 @@ python generate_ico_curves.py --H 128 --W 128 --ppp 1000 \
   polarization, and witness weights exactly as described in the
   discussion of operational advantages and ICO witness evaluations.
 
-## Extending the Companion Code
+## Extending the Code
 - Swap in your own amplitude/phase images (e.g., `--image sample.png`,
   `--phi-mode hue --phi-image texture.jpg`) to examine estimator
   behavior on realistic data.
@@ -142,4 +142,4 @@ python generate_ico_curves.py --H 128 --W 128 --ppp 1000 \
 
 Feel free to open issues or adapt the scripts for new samples—each module
 is written to be readable, with docstrings pointing back to the relevant
-equations in the paper.
+equations in the paper. And please let us know if you extend it to anything new and interesting! 
