@@ -159,7 +159,7 @@ class QEISimulator:
                     phi_step_thresh: float = 0.5) -> None:
         """
         Load amplitude T and construct phase φ.
-        - image_path: grayscale image mapped to T in [0.1,0.9]; else synthetic T.
+        - image_path: grayscale image mapped to T in [0.1,0.9]; defaults to 'butterfly.jpg' in repo.
         - T_const: if provided, override T everywhere with this constant (clipped [0.1,0.9]).
         - phi_mode: 'smooth' (default), 'ramp', 'vortex', 'zernike', 'hue', 'gray', 'step'.
         - phi_image: if provided and phi_mode in {'hue','gray','step'}, file used to drive phase.
@@ -678,7 +678,7 @@ class QEISimulator:
 
 # ---------------- plotting helper ----------------
 def create_publication_figure(sim: QEISimulator,
-                              sample_image: Optional[str] = None,
+                              sample_image: Optional[str] = "butterfly.jpg",
                               theta: float = np.pi/8,
                               phi_mode: str = "smooth",
                               phi_image: Optional[str] = None,
@@ -873,7 +873,7 @@ def main():
     parser.add_argument('--gpu', action='store_true', help='Use GPU via CuPy if available')
 
     # amplitude T and phi options
-    parser.add_argument('--image', type=str, default=None, help='Optional path to grayscale image for T')
+    parser.add_argument('--image', type=str, default='butterfly.jpg', help='Optional path to grayscale image for T (default: butterfly.jpg)')
     parser.add_argument('--T-const', type=float, default=None, help='Override T with a constant in [0.1,0.99]')
     parser.add_argument('--phi-mode', type=str, default='smooth',
                         choices=['smooth','ramp','vortex','zernike','hue','gray','step'],
